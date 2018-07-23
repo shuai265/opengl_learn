@@ -1,18 +1,20 @@
-//
-//  ViewController.m
-//  opengl_class
-//
-//  Created by shuai.liu on 2018/7/23.
-//  Copyright © 2018年 ihandy. All rights reserved.
-//
 
 #import "ViewController.h"
+#import "OGVertex.h"
 
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
+
+- (void)setupVertexBuffer {
+    const static OGVertex vertices[] = {
+        {{-1,-1,0}},
+        {{1,-1,0}},
+        {{0,0,0}}
+    };
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
