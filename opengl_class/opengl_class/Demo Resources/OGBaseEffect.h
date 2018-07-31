@@ -1,5 +1,9 @@
 
+
+
+
 #import <Foundation/Foundation.h>
+#import "OGVertex.h"
 
 @interface OGBaseEffect : NSObject
 

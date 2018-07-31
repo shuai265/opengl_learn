@@ -33,7 +33,7 @@
 		8A8139282105ED4D00338559 /* OGBaseEffect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OGBaseEffect.m; sourceTree = "<group>"; };
 		8A81392A2105ED7400338559 /* OGSimpleFragment.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; path = OGSimpleFragment.glsl; sourceTree = "<group>"; };
 		8A81392C2105ED9200338559 /* OGSimpleVertex.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; path = OGSimpleVertex.glsl; sourceTree = "<group>"; };
-		8A81392E2105EDA600338559 /* OGVertex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OGVertex.h; sourceTree = "<group>"; };
+		8A81392E2105EDA600338559 /* OGVertex.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; path = OGVertex.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
