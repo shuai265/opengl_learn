@@ -13,6 +13,9 @@
 		8A81391A2105EA7700338559 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A8139192105EA7700338559 /* Assets.xcassets */; };
 		8A81391D2105EA7700338559 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A81391B2105EA7700338559 /* LaunchScreen.storyboard */; };
 		8A8139202105EA7700338559 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A81391F2105EA7700338559 /* main.m */; };
+		8A8139292105ED4D00338559 /* OGBaseEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8139282105ED4D00338559 /* OGBaseEffect.m */; };
+		8A81392B2105ED7400338559 /* OGSimpleFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8A81392A2105ED7400338559 /* OGSimpleFragment.glsl */; };
+		8A81392D2105ED9200338559 /* OGSimpleVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8A81392C2105ED9200338559 /* OGSimpleVertex.glsl */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,11 @@
 		8A81391C2105EA7700338559 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A81391E2105EA7700338559 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A81391F2105EA7700338559 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8A8139272105ED4D00338559 /* OGBaseEffect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OGBaseEffect.h; sourceTree = "<group>"; };
+		8A8139282105ED4D00338559 /* OGBaseEffect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OGBaseEffect.m; sourceTree = "<group>"; };
+		8A81392A2105ED7400338559 /* OGSimpleFragment.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; path = OGSimpleFragment.glsl; sourceTree = "<group>"; };
+		8A81392C2105ED9200338559 /* OGSimpleVertex.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; path = OGSimpleVertex.glsl; sourceTree = "<group>"; };
+		8A81392E2105EDA600338559 /* OGVertex.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; path = OGVertex.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,7 @@
 		8A81390F2105EA7500338559 /* opengl_class */ = {
 			isa = PBXGroup;
 			children = (
+				8A8139262105ED1300338559 /* Demo Resources */,
 				8A8139102105EA7500338559 /* AppDelegate.h */,
 				8A8139112105EA7500338559 /* AppDelegate.m */,
 				8A8139132105EA7500338559 /* ViewController.h */,
@@ -69,6 +78,18 @@
 				8A81391F2105EA7700338559 /* main.m */,
 			);
 			path = opengl_class;
+			sourceTree = "<group>";
+		};
+		8A8139262105ED1300338559 /* Demo Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8A8139272105ED4D00338559 /* OGBaseEffect.h */,
+				8A8139282105ED4D00338559 /* OGBaseEffect.m */,
+				8A81392A2105ED7400338559 /* OGSimpleFragment.glsl */,
+				8A81392C2105ED9200338559 /* OGSimpleVertex.glsl */,
+				8A81392E2105EDA600338559 /* OGVertex.h */,
+			);
+			path = "Demo Resources";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +150,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A81391D2105EA7700338559 /* LaunchScreen.storyboard in Resources */,
+				8A81392D2105ED9200338559 /* OGSimpleVertex.glsl in Resources */,
+				8A81392B2105ED7400338559 /* OGSimpleFragment.glsl in Resources */,
 				8A81391A2105EA7700338559 /* Assets.xcassets in Resources */,
 				8A8139182105EA7500338559 /* Main.storyboard in Resources */,
 			);
@@ -144,6 +167,7 @@
 				8A8139152105EA7500338559 /* ViewController.m in Sources */,
 				8A8139202105EA7700338559 /* main.m in Sources */,
 				8A8139122105EA7500338559 /* AppDelegate.m in Sources */,
+				8A8139292105ED4D00338559 /* OGBaseEffect.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
