@@ -16,9 +16,7 @@
     return self;
 }
 
-- (void)prepareToDraw {
-    glUseProgram(_programHandle);
-}
+
 
 - (GLuint)compileShader:(NSString*)shaderName withType:(GLenum)shaderType {
     NSString* shaderPath = [[NSBundle mainBundle] pathForResource:shaderName ofType:nil];
@@ -62,6 +60,7 @@
     glAttachShader(_programHandle, fragmentShaderName);
     
     glBindAttribLocation(_programHandle, OGVertexAttribPosition, "a_Position");
+    glBindAttribLocation(_programHandle, OGVertexAttribColor, "a_Color");
     
     glLinkProgram(_programHandle);
     
@@ -74,6 +73,10 @@
         NSLog(@"%@", messageString);
         exit(1);
     }
+}
+
+- (void)prepareToDraw {
+    glUseProgram(_programHandle);
 }
 
 @end

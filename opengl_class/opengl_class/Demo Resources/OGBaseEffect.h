@@ -1,13 +1,12 @@
 
 
 
-
 #import <Foundation/Foundation.h>
 #import "OGVertex.h"
 
 @interface OGBaseEffect : NSObject
 
-@property (nonatomic, assign) GLuint ProgramHandle;
+@property (nonatomic, assign) GLuint programHandle;
 
 - (id)initWithVertexShader:(NSString *)vertexShader fragmentShader:(NSString *)fragmentShader;
 - (void)prepareToDraw;

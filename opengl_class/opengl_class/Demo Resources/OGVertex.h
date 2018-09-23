@@ -5,8 +5,10 @@
 
 typedef enum {
     OGVertexAttribPosition = 0,
+    OGVertexAttribColor = 1,
 } OGVertexAttributes;
 
 typedef struct {
     GLfloat Position[3];
+    GLfloat Color[4];
 } OGVertex;
